@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <p>Retrouver is a website that helps families find their loved ones during natural disasters. Our mission is to provide a platform where families can upload their loved ones' photos and use advanced algorithms to find similar profiles. We also provide general information about natural disasters and the precautions that need to be taken.</p>
+        <p>Our team consists of experts in computer vision, machine learning, and web development. We are committed to ensuring the privacy and security of our users' data and using it only for the purpose of finding similar profiles.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Retrouver</p>
+    </footer>
+</body>
+</html>

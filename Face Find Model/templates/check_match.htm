@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Match</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            width: 15rem;
+            height: 3rem;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 3rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Check Match</h1>
+        <p>Enter the username of the user to check if there is a match:</p>
+        <form action="{{ url_for('check_match', username=username) }}" method="get">
+            <input type="text" id="username" name="username" required><br><br>
+            <input type="submit" value="Check Match">
+        </form>
+    </div>
+</body>
+</html>

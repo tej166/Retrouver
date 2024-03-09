@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}Face Recognition App{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Add your custom styles here */
+
+        .title {
+            text-align: center;
+            padding: 2em;
+            font-size: 2em;
+            color: #333; /* Add your preferred color */
+            font-family: 'Your Custom Font', sans-serif; /* Add your custom font */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+            <a href="{{ url_for('signin') }}" class="w3-bar-item w3-button w3-padding-large">SIGN IN</a>
+            <a href="{{ url_for('signup') }}" class="w3-bar-item w3-button w3-padding-large">SIGN UP</a>
+            <!-- Add more navigation items here -->
+        </div>
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+        Finding Missing Person
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- Automatic Slideshow Images -->
+        <!-- Add your slideshow content here -->
+
+        <!-- The Band Section -->
+        <!-- Add your band section content here -->
+
+        <!-- The Tour Section -->
+        <!-- Add your tour section content here -->
+
+        <!-- Ticket Modal -->
+        <!-- Add your ticket modal content here -->
+
+        <!-- The Contact Section -->
+        <!-- Add your contact section content here -->
+
+    </div>
+
+    <!-- Image of location/map -->
+    <!-- Add your map image here -->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <!-- Add your footer content here -->
+    </footer>
+
+    <script>
+        // Add your scripts here
+    </script>
+
+</body>
+
+</html>
